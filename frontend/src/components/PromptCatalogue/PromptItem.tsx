@@ -1,12 +1,10 @@
 import React from 'react';
 
-const PromptItem = ({ title, description }) => {
-  return (
-    <div className="promptItem">
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-};
+interface PromptItemProps {
+  title: string;
+  description: string;
+}
 
-export default PromptItem;
+const PromptItem: React.FC<PromptItemProps> = ({ title, description }) => {
+  // ...
+};

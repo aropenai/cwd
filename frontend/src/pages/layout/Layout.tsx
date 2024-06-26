@@ -6,7 +6,9 @@ import { CopyRegular } from '@fluentui/react-icons'
 import { CosmosDBStatus } from '../../api'
 import Contoso from '../../assets/Contoso.svg'
 import { HistoryButton, ShareButton } from '../../components/common/Button'
-import  PromptCatalogue  from '../../components/PromptCatalogue'
+import  { PromptCatalogue }  from '../../components/PromptCatalogue'
+import { PromptItem } from '../../components/PromptCatalogue';
+
 import { AppStateContext } from '../../state/AppProvider'
 
 import styles from './Layout.module.css'
