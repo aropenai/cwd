@@ -6,9 +6,12 @@ import { CopyRegular } from '@fluentui/react-icons'
 import { CosmosDBStatus } from '../../api'
 import Contoso from '../../assets/Contoso.svg'
 import { HistoryButton, ShareButton } from '../../components/common/Button'
+import  PromptCatalogue  from '../../components/PromptCatalogue'
 import { AppStateContext } from '../../state/AppProvider'
 
 import styles from './Layout.module.css'
+
+
 
 const Layout = () => {
   const [isSharePanelOpen, setIsSharePanelOpen] = useState<boolean>(false)
@@ -127,6 +130,24 @@ const Layout = () => {
       </Dialog>
     </div>
   )
+
+  const PromptCatalogue = () => {
+    // This is just sample data. Replace this with your actual data.
+    const prompts = [
+      { id: 1, title: 'Prompt 1', description: 'This is the first prompt.' },
+      { id: 2, title: 'Prompt 2', description: 'This is the second prompt.' },
+      // Add more prompts as needed...
+    ];
+  
+    return (
+      <div className="promptCatalogue">
+        {prompts.map(prompt => (
+          <PromptItem key={prompt.id} title={prompt.title} description={prompt.description} />
+        ))}
+      </div>
+    );
+  };
+
 }
 
 export default Layout

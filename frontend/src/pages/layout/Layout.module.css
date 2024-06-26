@@ -99,6 +99,15 @@
   align-items: center;
   color: #242424;
 }
+.promptCatalogue {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  align-items: flex-end;
+  color: #242424;
+}
 
 @media (max-width: 480px) {
   .headerTitleContainer {
@@ -108,4 +117,10 @@
   .headerIcon {
     margin-left: 26px;
   }
+
+  .promptCatalogue {
+    /margin-top: 26px;
+  }
+
 }
+
